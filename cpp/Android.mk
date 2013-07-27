@@ -9,6 +9,7 @@ else
   # See build/core/version_defaults.mk for more information about this.
   RS_VERSION := "(1 + $(PLATFORM_SDK_VERSION))"
 endif
+RS_VERSION := 18
 local_cflags_for_rs_cpp += -DRS_VERSION=$(RS_VERSION)
 
 LOCAL_CFLAGS += $(local_cflags_for_rs_cpp)

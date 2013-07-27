@@ -1,9 +1,7 @@
 
 LOCAL_PATH:=$(call my-dir)
 
-rs_base_CFLAGS := -Werror -Wall -Wno-unused-parameter -Wno-unused-variable $(call-cc-cpp-option,-Qunused-arguments)
-# For gcc 4.7, C++11 narrowing is a warning...
-rs_base_CFLAGS += -Wno-error
+rs_base_CFLAGS := -Wno-error -Wall -Wno-unused-parameter -Wno-unused-variable $(call-cc-cpp-option,-Qunused-arguments)
 ifeq ($(TARGET_BUILD_PDK), true)
   rs_base_CFLAGS += -D__RS_PDK__
 endif
