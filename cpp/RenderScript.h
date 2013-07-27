@@ -23,5 +23,6 @@
 #ifdef RS_SERVER
 #define RS_VERSION 18
 #endif
+#define RS_VERSION 18
 
 #endif
